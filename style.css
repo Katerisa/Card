@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+body {
+    background-color: #4d4d4d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: dimgray;
+    transition: .5s linear;
+}
+.container {
+    width: 65vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+.nav {
+    padding-right: 10%;
+}
+.logo {
+    width: 100px;
+    object-fit: contain;
+    margin-left: 70px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu > li:hover {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+.topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    height: inherit;
+}
+
+.topmenu > li:last-child {
+    margin-right: 0;
+}
+
+.fa {
+    font-size: 18px;
+    color: inherit;
+    padding-left: 10px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+ul li:hover .submenu {
+    display: block;
+    background-color: rgba(255, 99, 71, 0.8);
+}
+ul li:hover {
+    background-color: tomato;
+}
+.left_part {
+    width: 55%;
+}
+.right_part {
+    width: 45%;
+}
+.left_part .motto {
+    font-size: 60px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.left_part .recommend {
+    font-size: 26px;
+}
+.left_part .btn {
+    height: 50px;
+    width: 280px;
+    background-color: tomato;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+.left_part .btn:hover {
+    box-shadow: 0 5px 10px 5px blanchedalmond;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 90px;
+}
